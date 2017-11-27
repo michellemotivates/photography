@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<title>Michelle Andreassen Photography</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/style.css">
+
+<body>
+
+    <!-- Sidebar -->
+    <nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+    <i class="fa fa-remove"></i>
+  </a>
+        <div class="w3-bar-block w3-center">
+            <a href="index.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Home</a><a href="about.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">About</a>
+            <a href="photos.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Photos</a>
+            <a href="paintings.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Art</a>
+            <a href="contact.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Contact</a>
+        </div>
+    </nav>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-content wrapper" style="max-width:1500px">
+
+        <!-- Header -->
+        <div class="w3-opacity">
+            <span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+            <div class="w3-clear"></div>
+            <header class="w3-center w3-margin-bottom">
+                <h1><b>Photographer Michelle Andreassen</b></h1>
+                <p><b>"Everything is interesting if you look at it from the right angle"</b></p>
+
+            </header>
+        </div>
+
+        <!-- Photo Grid -->
+        <div class="w3-row" id="myGrid" style="margin-bottom:128px">
+            <div class="w3-third">
+                <img src="/images/homeless-dog.JPG" style="width:100%">
+                <img src="images/gangbro.jpg" style="width:100%">
+                <img src="images/toronto.JPG" style="width:100%">
+                <img src="images/harlem-train.jpg" style="width:100%">
+                <img src="images/boy-beach.jpg" style="width:100%">
+                <img src="images/hjertingstrand.jpg" style="width:100%">
+                <img src="images/rails.jpg" style="width:100%">
+                <img src="images/fuerte-lanzarote.jpg" style="width:100%">
+            </div>
+
+            <div class="w3-third">
+                <img src="images/toronto-relax.JPG" style="width:100%">
+                <img src="images/trappe-boern.jpg" style="width:100%">
+                <img src="images/girls-ducks-boat.jpg" style="width:100%"><img src="images/empire-state.jpg" style="width:100%">
+                <img src="images/foot-paris.jpg" style="width:100%">
+                <img src="images/vejlebroen.jpg" style="width:100%">
+                <img src="images/couple-skyline.JPG" style="width:100%"><img src="images/beauty-is.JPG" style="width:100%">
+
+            </div>
+
+            <div class="w3-third">
+                <img src="images/waterframe.jpg" style="width:100%">
+                <img src="images/men-on-wall.JPG" style="width:100%">
+                <img src="images/fall-bench-vejle.jpg" style="width:100%">
+                <img src="images/cn-tower.JPG" style="width:100%">
+                <img src="images/hippie-bus.JPG" style="width:100%">
+                <img src="images/trump-tower.JPG" style="width:100%">
+                <img src="images/hede.JPG" style="width:100%">
+            </div>
+        </div>
+
+        <!-- End Page Content -->
+
+
+        <!-- Footer -->
+        <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge w3-cell-row" style="margin-top:128px">
+            <p class="w3-cell w3-small">Michelle Andreassen<br> Lervangen 46, DK-7120 Vejle Ø</p>
+            <div class="w3-cell none">
+                <i class="fa fa-facebook-official w3-hover-opacity"></i>
+                <i class="fa fa-instagram w3-hover-opacity"></i>
+                <i class="fa fa-snapchat w3-hover-opacity"></i>
+                <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+                <i class="fa fa-twitter w3-hover-opacity"></i>
+                <i class="fa fa-linkedin w3-hover-opacity"></i>
+            </div>
+        </footer>
+    </div>
+    <script>
+        // Toggle grid padding
+        function myFunction() {
+            var x = document.getElementById("myGrid");
+            if (x.className === "w3-row") {
+                x.className = "w3-row-padding";
+            } else {
+                x.className = x.className.replace("w3-row-padding", "w3-row");
+            }
+        }
+
+        // Open and close sidebar
+        function w3_open() {
+            document.getElementById("mySidebar").style.width = "100%";
+            document.getElementById("mySidebar").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+
+    </script>
+
+</body>
+
+</html>
